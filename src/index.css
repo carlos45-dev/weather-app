@@ -129,3 +129,43 @@ h1 {
     font-size: 1.2rem;
     margin-top: 2rem;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .input-element {
+        width: 90%;
+    }
+
+    .btn-element {
+        position: static;
+        display: block;
+        margin: 1rem auto;
+        width: 200px;
+    }
+
+    .city {
+        position: static;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .des {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .div-element {
+        margin-top: 2rem;
+    }
+    .error-message{
+        margin-top: 2rem;
+    }
+}
