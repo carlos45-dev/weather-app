@@ -1,4 +1,4 @@
-import { useState, useEffect, ChangeEvent, KeyboardEvent } from "react";
+import { useState, useEffect, } from "react";
 import Card from "./card";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faCloud } from '@fortawesome/free-solid-svg-icons';
