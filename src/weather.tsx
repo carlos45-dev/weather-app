@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, ChangeEvent, KeyboardEvent } from "react";
 import Card from "./card";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faCloud } from '@fortawesome/free-solid-svg-icons';
@@ -50,16 +50,16 @@ function Weather() {
         fetchWeatherForCity("blantyre");
     }, []); 
 
-    const handleChange = (event) => {
-        setCity(event.target.value);
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setCity(e.target.value);
     };
 
     const handleGetWeatherClick = () => {
         fetchWeatherForCity(city);
     };
 
-    const handleKeyDown = (event) => {
-        if (event.key === 'Enter') {
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
             handleGetWeatherClick();
         }
     };
