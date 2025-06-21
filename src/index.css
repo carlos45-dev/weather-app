@@ -131,6 +131,9 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    body{
+        background-image: url(download2.jfif);
+    }
     h1 {
         font-size: 2.5rem;
     }

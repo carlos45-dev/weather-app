@@ -30,7 +30,7 @@ function Weather() {
 
         try {
             const response = await fetch(url);
-            if (!response.ok) throw new Error("City not found");
+            if (!response.ok) throw new Error("City  not found");
             const data: WeatherData = await response.json();
             setWeather(data);
             setCity("");
