@@ -25,27 +25,6 @@ function Weather() {
     const [city, setCity] = useState<string>("");
     const [error, setError] = useState<string | null>(null);
 
-    const fetchWeatherByCoords = async (latitude: number, longitude: number) => {
-        const apiKey = `257a5e2dac441e5d1662c41efc4a5a86`;
-        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
-        try {
-            const response = await fetch(url);
-            if (!response.ok) throw new Error("Location not found");
-            const data: WeatherData = await response.json();
-            setWeather(data);
-            setCity(data.name);
-            setCity("");
-        } catch (err) {
-            if (err instanceof Error) {
-                setError(err.message);
-            } else {
-                setError("An unknown error occurred");
-            }
-            setWeather(null);
-        }
-    };
-
     const fetchWeatherByCity = async (city: string) => {
         const apiKey = `257a5e2dac441e5d1662c41efc4a5a86`;
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
