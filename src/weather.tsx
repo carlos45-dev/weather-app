@@ -66,7 +66,7 @@ function Weather() {
 
     return (
         <>
-            <h1>Weather app <FontAwesomeIcon icon={faCloud} style={{ color: "#ffffff" }} /></h1>
+            <h1>Weather <FontAwesomeIcon icon={faCloud} style={{ color: "#ffffff" }} /></h1>
             <input
                 className="input-element"
                 type="text"
