@@ -66,7 +66,7 @@ function Weather() {
 
     return (
         <>
-            <h1>Weather app ☁</h1>
+            <h1>Weather app <FontAwesomeIcon icon={faCloud} style={{ color: "#ffffff" }} /></h1>
             <input
                 className="input-element"
                 type="text"
@@ -91,7 +91,7 @@ function Weather() {
                 <div className="div-element">
                     
                     <p className="des">
-                        {weather.weather[0].description} <FontAwesomeIcon icon={faCloud} style={{ color: "#ffffff" }} />
+                        {weather.weather[0].description} 
                     </p>
                     <Card 
                         wind={weather.wind.speed} 
