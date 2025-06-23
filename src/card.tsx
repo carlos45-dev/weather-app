@@ -13,18 +13,18 @@ function Card({ wind, temp, feel, humidity }: CardProps) {
         <div className="card">
             <div className="info-grid">
                 <div className="wind-spead">
-                    <span><FontAwesomeIcon icon={faWind} style={{ color: "#87CEEB" }} /> Wind speed{wind} m/s</span>
+                    <span><FontAwesomeIcon icon={faWind} style={{ color: "#87CEEB" }} /> Wind speed  {wind} m/s</span>
                 </div>
                 <div className="temperature">
-                    <span><FontAwesomeIcon icon={faTemperatureHalf} style={{ color: "#e13748" }} /> Temperature</span>
-                    <span>{temp}</span>
+                    <span><FontAwesomeIcon icon={faTemperatureHalf} style={{ color: "#e13748" }} /> Temperature </span>
+                    <span>{Math.round(temp)}℃</span>
                 </div>
                 <div className="feels_like">
-                    <span><FontAwesomeIcon icon={faTemperatureHalf} style={{ color: "#e13748" }} /> Feels like</span>
-                    <span>{feel}°C</span>
+                    <span><FontAwesomeIcon icon={faTemperatureHalf} style={{ color: "#e13748" }} /> Feels like </span>
+                    <span>{Math.round(feel)}℃</span>
                 </div>
                 <div className="humidity">
-                    <span>💧 Humidity</span>
+                    <span>💧 Humidity </span>
                     <span>{humidity}%</span>
                 </div>
             </div>
