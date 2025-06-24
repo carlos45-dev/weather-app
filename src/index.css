@@ -36,8 +36,8 @@ h1 {
 
 .input-element:focus {
     outline: none;
-    border-color: #63E6BE;
-    box-shadow: 0 0 10px rgba(99, 230, 190, 0.5);
+    border-color: #2e17df;
+    box-shadow: 0 0 10px rgba(20, 48, 232, 0.5);
 }
 
 .btn-element {
@@ -55,7 +55,7 @@ h1 {
     color: #1a1a1a;
     transition: background-color 0.3s ease;
     transition: scale 0.3s ease-in-out;
-     background-color: #3498db; /* new blue */
+     background-color: #3498db; 
      color: white;
     
 }
@@ -80,7 +80,7 @@ h1 {
 }
 
 .des {
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-transform: capitalize;
     margin-bottom: 2rem;
     position: relative;
@@ -100,7 +100,7 @@ h1 {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    
+    margin-bottom: 0px;
 }
 
 .card:hover {
@@ -147,9 +147,31 @@ h1 {
 .temp{
     display:none;
 }
+.wind-spead{
+    padding-left: 5px;
+    min-width: 200px;
+    text-align: start;
+  }
+  .pressure{
+    margin-top: 20px;
+    position: relative;
+  }
+  .direction{
+    margin-top: 20px;
+    position: relative;
+  }
+  .max{
+    margin-top: 20px;
+    position: relative;
+  }
+  .min{
+    margin-top: 20px;
+    position: relative;
+  }
+
 @media (max-width: 768px) {
   body {
-    background-image: url(download2.jfif);
+    background-image: url(image.jfif);
   }
 
   h1 {
@@ -157,20 +179,20 @@ h1 {
   }
 
   .input-element {
-    width: 70%;
+    width: 55%;
     position: relative;
-    left: auto;
+    left:0px;
     top: auto;
-    margin: 1rem auto;
   }
 
   .btn-element {
-    width: 60%;
-    position: relative;
-    top: auto;
-    left: auto;
-    display: block;
-    margin: 0 auto 1.5rem;
+    width: 18%;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 112px;
+    left: 408px;
+    display:inline ;
+    
   }
 
   .city {
@@ -183,7 +205,7 @@ h1 {
   }
 
   .city-icon {
-    font-size: 14px;
+    font-size: 0.2rem;
     position: relative;
     top: 0;
     left: auto;
@@ -198,7 +220,7 @@ h1 {
   }
 
   .temp {
-    display: none;
+    display: flex;
   }
 
   .card {
@@ -212,6 +234,8 @@ h1 {
   .info-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    height:90px;
+    padding-top: 10px;
   }
 
   .wind-spead,
@@ -224,4 +248,5 @@ h1 {
     top: auto;
     text-align: center;
   }
+  
 }
