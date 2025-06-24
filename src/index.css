@@ -232,6 +232,42 @@ h1 {
     height:90px;
     padding-top: 20px;
   }
+  /*displaying the icons in a column*/
+  .pressure{
+    display: flex;
+    flex-direction:column ;
+  }
+  .direction{
+     display: flex;
+     flex-direction:column ;
+  }
+  .wind-spead{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+  }
+  .humidity{
+    display: flex;
+    flex-direction:column ;
+  }
+
+  /*increasing the size of the icons*/
+  .wind-icon{
+    font-size: 30px;  
+    margin-left: 10px;  
+  }
+  .humidity-icon{
+    font-size: 30px;
+  }
+  .pressure-icon{
+    font-size: 30px;
+  }
+  .wind-direction-icon{
+    font-size: 30px;
+    
+  }
+
+  /*formating the search bar and the button*/
   .search-wrapper{
     display: flex;
     justify-content: flex-start;
@@ -239,19 +275,7 @@ h1 {
     padding: 0 20px;
     margin-top: -20px;
   }
-
-  .wind-spead,
-  .temperature,
-  .feels_like,
-  .pressure,
-  .direction,
-
-  .humidity {
-    position: relative;
-    left: auto;
-    top: auto;
-    text-align: center;
-  }
+ /*making the other information invisible*/
   .min{
     display: none;
   }
@@ -261,47 +285,13 @@ h1 {
   .temperature{
     display: none;
   }
-  .wind-icon{
-    display: block;
-    font-size: 30px;
-    margin-left:80px;
-    margin-bottom: 5px;
-  }
   .feels_like{
     display: none;
   }
-  .humidity-icon{
-    display: block;
-    font-size: 32px;
-    margin-bottom: 5px;
+  .text{
+    display: none;
   }
-  .wind-direction-icon{
-    display: block;
-    margin-left:75px;
-    margin-bottom: 9px;
-    font-size: 30px;
-  }
-  .pressure-icon{
-    display: block;
-    margin-left:50px;
-    margin-bottom: 9px;
-    font-size: 30px;
-  }
-  .pressure{
-    margin-top:-10px;
-    margin-left: -40px;
-  }
-  .direction{
-    margin-top:-10px;
-  }
-  .humidity{
-    margin-left: -23px;
-    margin-top: -10px;
-  }
-  .wind-spead,.direction{
-    margin-left: -15PX;
-  }
-  .wind-spead{
-    margin-top: -4px;
+  .mf{
+  display: block;
   }
 }

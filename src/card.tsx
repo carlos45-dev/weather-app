@@ -19,7 +19,7 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
         <div className="card">
             <div className="info-grid">
                 <div className="wind-spead">
-                    <span><FontAwesomeIcon className="wind-icon" icon={faWind} style={{ color: "#87CEEB" }} /> Wind speed {wind}m/s</span>
+                    <span> <FontAwesomeIcon className="wind-icon" icon={faWind} style={{ color: "#87CEEB" }} /> <span className='text'>Wind speed</span> <span className='mf'>{wind}m/s</span></span>
                 </div>
 
                 <div className="temperature">
@@ -34,11 +34,13 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
 
                 <div className="humidity">
                     <span className="humidity-icon">💧</span>
-                    <span> Humidity {humidity}%</span>
+                    <span> <span className='text'>Humidity</span> {humidity}%</span>
                 </div>
 
                 <div className="direction">
-                    <span>< FontAwesomeIcon className='wind-direction-icon' icon={faCompass} style={{ color: "#87CEEB" }} /> Wind direction </span>
+                    <span>< FontAwesomeIcon className='wind-direction-icon' icon={faCompass} style={{ color: "#87CEEB" }} />
+                     <span className="text"> Wind direction</span>
+                     </span>
                     <span>{getWindDirection(deg)}°</span>
                 </div>
 
@@ -53,7 +55,7 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
                 </div>
 
                 <div className='pressure'>
-                 <span><FontAwesomeIcon className="pressure-icon" icon={faGauge} style={{ color: "#74C0FC"}} />  Pressure </span>
+                 <span><FontAwesomeIcon className="pressure-icon" icon={faGauge} style={{ color: "#74C0FC"}} />  <span className='text'>Pressure</span> </span>
                      <span>{pressure}hPa</span>
                      </div>
             </div>
