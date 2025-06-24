@@ -254,39 +254,20 @@ h1 {
   .wind-spead,.wind-direction-icon{
     margin-left:-30px ;
   }
-    
-  }
-  .wind-icon{
-    font-size: 30px;  
-    margin-left: 10px;  
-  }
-  .humidity-icon{
-    font-size: 30px;
-  }
-  .pressure-icon{
-    font-size: 30px;
-  }
-  .wind-direction-icon{
-    font-size: 30px;
-    
-  }
-
   /*increasing the size of the icons*/
   .wind-icon{
-    font-size: 30px;  
+    font-size: 40px;  
     margin-left: 10px;  
   }
   .humidity-icon{
-    font-size: 30px;
+    font-size: 40px;
   }
   .pressure-icon{
-    font-size: 30px;
+    font-size: 40px;
   }
   .wind-direction-icon{
-    font-size: 30px;
-    
+    font-size: 40px; 
   }
-
 
   /*formating the search bar and the button*/
   .search-wrapper{
@@ -315,4 +296,4 @@ h1 {
   .mf{
   display: block;
   }
-
+}
