@@ -218,12 +218,12 @@ h1 {
   }
 
   .card {
-    height: 15rem;
+    height: 12rem;
     padding: 15px;
     width: 90%;
     margin: 1rem auto;
     position: relative;
-    top:40px;
+    top:60px;
   }
 
   .info-grid {
