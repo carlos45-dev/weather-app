@@ -175,21 +175,14 @@ h1 {
   }
 
   .input-element {
-    width: 55%;
-    position: relative;
-    left:0px;
-    top: auto;
-  }
+  width: 60%;
+  position: static;
+}
 
-  .btn-element {
-    width: 18%;
-    font-size: 0.8rem;
-    position: absolute;
-    top: 112px;
-    left: 408px;
-    display:inline ;
-    
-  }
+.btn-element {
+  width: auto;
+  position: static;
+}
 
   .city {
     font-size: 1.6rem;
@@ -201,22 +194,27 @@ h1 {
   }
 
   .city-icon {
-    font-size: 0.2rem;
-    position: relative;
-    top: 0;
-    left: auto;
-    text-align: center;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 10px;
+    left: 187px;
+    margin-top: 8px;
   }
 
   .des {
     font-size: 1.1rem;
     text-align: center;
     position: relative;
-    top: 10px;
+    top: 0px;
+    margin-top: -70px;
   }
 
   .temp {
-    display: flex;
+    display: block;
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    margin-top: -10px
   }
 
   .card {
@@ -232,7 +230,13 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     height:90px;
-    padding-top: 30px;
+    padding-top: 20px;
+  }
+  .search-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
   }
 
   .wind-spead,
@@ -250,4 +254,33 @@ h1 {
   .max{
     display: none;
   }  
+  .temperature{
+    display: none;
+  }
+  .wind-icon{
+    display: block;
+    font-size: 35px;
+    margin-left:75px;
+    margin-bottom: 10px;
+  }
+  .feels_like{
+    display: none;
+  }
+  .humidity-icon{
+    display: block;
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  .wind-direction-icon{
+    display: block;
+    margin-left:75px;
+    margin-bottom: 9px;
+    font-size: 35px;
+  }
+  .pressure-icon{
+    display: block;
+    margin-left:75px;
+    margin-bottom: 9px;
+    font-size: 35px;
+  }
 }

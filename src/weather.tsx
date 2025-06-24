@@ -109,6 +109,7 @@ function Weather() {
     return (
         <>
             <h1>Weather <FontAwesomeIcon icon={faCloud} style={{ color: "#ffffff" }} /></h1>
+            <div className="search-wrapper">
             <input
                 className="input-element"
                 type="text"
@@ -120,27 +121,30 @@ function Weather() {
             <button className="btn-element" onClick={handleGetWeatherClick}>
                 Get weather
             </button>
+            </div>
 
             {error && <p className="error-message" style={{ color: 'red', textAlign: 'center', marginTop: '160px' }}>{error}</p>}
 
           {weather &&
           <div className="city">
             <p>{weather.name}</p>
-            <p className="city-icon"><FontAwesomeIcon icon={faLocationDot} beatFade style={{ color: "#ffffff" }} /> <FontAwesomeIcon icon={faEllipsis} style={{ color: "ffffff" }} />
 
+            <div className="city-icon">
+            <p><FontAwesomeIcon icon={faLocationDot} beatFade style={{ color: "#ffffff" }} /> <FontAwesomeIcon icon={faEllipsis} style={{ color: "ffffff" }} />  
             </p>  
+            </div>        
             </div>
                  }
 
             {weather && (
                 <div className="div-element">
-                    
-                    <p className="des">
-                        {weather.weather[0].description}
-                    </p>
 
                     <p className="temp">
                         {Math.round(weather.main.temp)}°
+                    </p>
+                    
+                    <p className="des">
+                        {weather.weather[0].description}
                     </p>
                     <Card 
                         wind={weather.wind.speed} 
