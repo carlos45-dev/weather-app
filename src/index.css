@@ -245,11 +245,13 @@ h1 {
   .feels_like,
   .pressure,
   .direction,
+
   .humidity {
     position: relative;
     left: auto;
     top: auto;
     text-align: center;
+    border: solid;
   }
   .min{
     display: none;
@@ -282,18 +284,22 @@ h1 {
   }
   .pressure-icon{
     display: block;
-    margin-left:75px;
+    margin-left:60px;
     margin-bottom: 9px;
     font-size: 30px;
   }
   .pressure{
     margin-top:-25px;
-    margin-left: -23px;
+    margin-left: -40px;
   }
   .direction{
     margin-top:-25px;
   }
   .humidity{
     margin-left: -23px;
+    margin-top: -10px;
+  }
+  .wind-spead,.direction{
+    margin-left: -15PX;
   }
 }
