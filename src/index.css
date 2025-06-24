@@ -243,6 +243,8 @@ h1 {
   .wind-spead,
   .temperature,
   .feels_like,
+  .pressure,
+  .direction,
   .humidity {
     position: relative;
     left: auto;
@@ -260,9 +262,9 @@ h1 {
   }
   .wind-icon{
     display: block;
-    font-size: 35px;
-    margin-left:50px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-left:70px;
+    margin-bottom: 5px;
   }
   .feels_like{
     display: none;
@@ -276,12 +278,22 @@ h1 {
     display: block;
     margin-left:75px;
     margin-bottom: 9px;
-    font-size: 35px;
+    font-size: 30px;
   }
   .pressure-icon{
     display: block;
-    margin-left:7px;
+    margin-left:75px;
     margin-bottom: 9px;
-    font-size: 35px;
+    font-size: 30px;
+  }
+  .pressure{
+    margin-top:-25px;
+    margin-left: -23px;
+  }
+  .direction{
+    margin-top:-25px;
+  }
+  .humidity{
+    margin-left: -23px;
   }
 }
