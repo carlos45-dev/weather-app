@@ -225,14 +225,14 @@ h1 {
     width: 90%;
     margin: 1rem auto;
     position: relative;
-    top: 200px;
+    top: 170px;
   }
 
   .info-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 50px;
     height:90px;
-    padding-top: 10px;
+    padding-top: 30px;
   }
 
   .wind-spead,
@@ -240,7 +240,6 @@ h1 {
   .feels_like,
   .humidity {
     position: relative;
-    font-size: 14px;
     left: auto;
     top: auto;
     text-align: center;
