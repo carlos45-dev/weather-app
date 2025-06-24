@@ -56,7 +56,7 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
 
                 <div className='pressure'>
                  <span><FontAwesomeIcon className="pressure-icon" icon={faGauge} style={{ color: "#74C0FC"}} />  <span className='text'>Pressure</span> </span>
-                     <span className='space'>{pressure}hPa</span>
+                     <span className='space2'>{pressure}hPa</span>
                      </div>
             </div>
         </div>
