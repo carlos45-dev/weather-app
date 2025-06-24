@@ -303,6 +303,7 @@ h1 {
   }
   .mf{
   display: block;
+  padding-left: 30px;
   }
   .space{
     margin-left: 50px;
