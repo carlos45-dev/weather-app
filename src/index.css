@@ -171,7 +171,7 @@ h1 {
 
 @media (max-width: 768px) {
   body {
-    background-image: url(image.jfif);
+    background-image: url(phone.jfif);
   }
 
   h1 {
