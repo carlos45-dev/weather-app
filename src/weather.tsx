@@ -1,7 +1,7 @@
 import { useState, useEffect, } from "react";
 import Card from "./card";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faCloud } from '@fortawesome/free-solid-svg-icons';
+import { faLocationArrow, faCloud } from '@fortawesome/free-solid-svg-icons';
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -130,8 +130,24 @@ function Weather() {
             <p>{weather.name}</p>
 
             <div className="city-icon">
-            <p><FontAwesomeIcon icon={faLocationDot} beatFade style={{ color: "#ffffff" }} /> <FontAwesomeIcon icon={faEllipsis} style={{ color: "ffffff" }} />  
-            </p>  
+                        <p>
+            <FontAwesomeIcon
+                icon={faLocationArrow}
+                beatFade
+                style={{
+                color: "#003366",
+                textShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
+                }}
+            />{" "}
+            <FontAwesomeIcon
+                icon={faEllipsis}
+                style={{
+                color: "#003366",
+                textShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
+                }}
+            />
+            </p>
+
             </div>        
             </div>
                  }
