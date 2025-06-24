@@ -256,7 +256,7 @@ h1 {
   }
   /*adjusting the position of the icons*/
   .wind-spead,.wind-direction-icon{
-    margin-left:-50px ;
+    margin-left:-45px ;
   }
   /*increasing the size of the icons*/
   .wind-icon{
@@ -303,6 +303,9 @@ h1 {
   }
   .mf{
   display: block;
+  }
+  .space{
+    margin-left: 50px;
   }
 
 }
