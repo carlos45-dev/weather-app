@@ -194,7 +194,7 @@ h1 {
   .city {
     font-size: 1.6rem;
     position: relative;
-    top: 0;
+    top: 0px;
     left: auto;
     text-align: center;
     margin-top: 0.5rem;
@@ -220,11 +220,12 @@ h1 {
   }
 
   .card {
-    height: auto;
+    height: 15rem;
     padding: 15px;
     width: 90%;
     margin: 1rem auto;
     position: relative;
+    top: 200px;
   }
 
   .info-grid {
@@ -244,5 +245,10 @@ h1 {
     top: auto;
     text-align: center;
   }
-  
+  .min{
+    display: none;
+  }
+  .max{
+    display: none;
+  }  
 }
