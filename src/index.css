@@ -187,7 +187,7 @@ h1 {
   .city {
     font-size: 1.6rem;
     margin-top: 66px;
-    margin-left: -10px;
+    margin-left: -20px;
   }
   
   .city-icon {
@@ -218,7 +218,7 @@ h1 {
     margin: 1rem auto;
     position: relative;
     top:140px;
-    margin-top: -35px;
+    margin-top: -25px;
   }
 
   .info-grid {
