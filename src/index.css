@@ -255,9 +255,7 @@ h1 {
     margin-top: -10px;
   }
   /*adjusting the position of the icons*/
-  .wind-spead{
-
-  }
+  .wind-spead,
   .wind-direction-icon{
     margin-left:-45px ;
   }
@@ -307,17 +305,9 @@ h1 {
   }
   .mf{
   display: block;
-<<<<<<< HEAD
   padding-left: 30px;
-=======
-  padding-left: 40px;
->>>>>>> b56b89c52b6e8195a67c28637cb6f8a77452aad8
   }
   .space{
     margin-left: 50px;
   }
-  .space2{
-    margin-left:70px;
-  }
-
 }
