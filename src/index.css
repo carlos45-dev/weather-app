@@ -187,19 +187,16 @@ h1 {
   .city {
     font-size: 1.6rem;
     position: relative;
-    top: 0px;
-    left: auto;
-    text-align: center;
-    margin-top: -20px;
+    top:auto;
+    padding-left: 20px;
+    
   }
 
   .city-icon {
     font-size: 0.7rem;
     position: absolute;
-    top:14px;
-    margin-left:140px;   
+    top:20px;
   }
-
   .des {
     font-size: 1.1rem;
     text-align: center;

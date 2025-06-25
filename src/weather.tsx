@@ -127,7 +127,7 @@ function Weather() {
 
           {weather &&
           <div className="city">
-            <p>{weather.name}</p>
+            <p className="city-name">{weather.name}</p>
 
             <div className="city-icon">
                         <p>
