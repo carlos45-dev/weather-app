@@ -38,7 +38,7 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
 
                 <div className="humidity">
                     <span className="humidity-icon">💧</span>
-                    <span> <span className='text'>Humidity</span> <div className='space'>{humidity}%</div></span>
+                    <span> <span className='text'>Humidity</span> <span className='space'>{humidity}%</span></span>
                 </div>
 
                 <div className="max">
@@ -54,7 +54,7 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
                 
                 <div className="direction">
                     <span>< FontAwesomeIcon className='wind-direction-icon' icon={faCompass} style={{ color: "#87CEEB" }} />
-                     <span className="text">Direction</span>
+                     <span className="text"> Direction </span>
                      </span>
                     <span className='space'>{getWindDirection(deg)}°</span>
                 </div>
