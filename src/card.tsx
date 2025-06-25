@@ -20,7 +20,7 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
             <div className="info-grid">
 
                 <div className="wind-speed">
-                    <span>< FontAwesomeIcon className='wind-icon' icon={faWind} style={{ color: "#C2B280"}} />
+                    <span>< FontAwesomeIcon className='wind-icon' icon={faWind} style={{ color: "#87CEEB"}} />
                      <span className="text">Wind</span>
                      </span>
                     <span className='space'>{wind}m/s</span>
@@ -60,7 +60,7 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
                 </div>
 
                 <div className='pressure'>
-                 <span><FontAwesomeIcon className="pressure-icon" icon={faGauge} style={{ color: "#BDC3C7"}} />  <span className='text'>Pressure</span> </span>
+                 <span><FontAwesomeIcon className="pressure-icon" icon={faGauge} style={{ color: "#87CEEB"}} />  <span className='text'>Pressure</span> </span>
                      <span className='space'>{pressure}hPa</span>
                      </div>
             </div>
