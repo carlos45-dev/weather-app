@@ -153,26 +153,31 @@ function Weather() {
                  }
 
             {weather && (
-                <div className="div-element">
+                <>
+                    <div className="div-element">
 
-                    <p className="temp">
-                        {Math.round(weather.main.temp)}°
+                        <p className="temp">
+                            {Math.round(weather.main.temp)}°
+                        </p>
+                        
+                        <p className="des">
+                            {weather.weather[0].description}
+                        </p>
+                        <Card 
+                            wind={weather.wind.speed} 
+                            temp={weather.main.temp} 
+                            feel={weather.main.feels_like} 
+                            humidity={weather.main.humidity} 
+                            deg={weather.wind.deg}
+                            pressure={weather.main.pressure}
+                            max={weather.main.temp_max}
+                            min={weather.main.temp_min}
+                        />
+                    </div>
+                    <p className='developer'>
+                        Developed by Carlos Muleke
                     </p>
-                    
-                    <p className="des">
-                        {weather.weather[0].description}
-                    </p>
-                    <Card 
-                        wind={weather.wind.speed} 
-                        temp={weather.main.temp} 
-                        feel={weather.main.feels_like} 
-                        humidity={weather.main.humidity} 
-                        deg={weather.wind.deg}
-                        pressure={weather.main.pressure}
-                        max={weather.main.temp_max}
-                        min={weather.main.temp_min}
-                    />
-                </div>
+                </>
             )}
         </>
     );

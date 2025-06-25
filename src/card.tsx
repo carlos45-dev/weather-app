@@ -16,7 +16,7 @@ interface CardProps {
 
 function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
     return (
-        <>
+        <div className="main-container">
         <div className="card">
             <div className="info-grid">
 
@@ -66,10 +66,7 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
                      </div>
             </div>
         </div>
-        
-        <p className='developer' style={{fontSize: "10px", fontFamily: "sans-serif", paddingTop: "6px" }}>Developed by Carlos Muleke</p>
-    
-        </>
+        </div>
     );
 }
 
