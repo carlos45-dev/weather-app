@@ -260,6 +260,16 @@ h1 {
     position: relative;
     bottom: 60px;
   }
+  .humidity,
+  .wind-speed{
+    position: relative;
+    bottom:20px;
+  }
+  .wind-speed,
+  .direction{
+    position: relative;
+    left: 15px;
+  }
   /*formating the search bar and the button*/
   .search-wrapper{
     display: flex;
