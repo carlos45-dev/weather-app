@@ -212,6 +212,7 @@ h1 {
   }
 
   .card {
+    border-radius: 20px;
     height: 12rem;
     padding: 15px;
     width: 90%;
