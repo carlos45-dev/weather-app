@@ -220,6 +220,7 @@ h1 {
     border-radius: 20px;
     height: 12rem;
     padding: 15px;
+    padding-left: 10%;
     max-width: 95%;
     margin: 1rem auto;    
     position: relative;
