@@ -220,10 +220,10 @@ h1 {
     border-radius: 20px;
     height: 12rem;
     padding: 15px;
-    padding-left: 13%;
+    padding-left: 14%;
     max-width: 95%; 
     position: relative;
-   right: 3%;
+   right: 4%;
     top: 140px;
     margin-top: -100px;
   }
@@ -274,7 +274,7 @@ h1 {
   .wind-speed,
   .direction{
     position: relative;
-    left: 15px;
+    margin-left: -15px;
   }
   /*formating the search bar and the button*/
   .search-wrapper{
