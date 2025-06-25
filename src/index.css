@@ -291,4 +291,10 @@ h1 {
   .feels_like{
     display: none;
   }
-}
+  .developer{
+    position: absolute;
+    top: 775px;
+    left: 150px;
+  }
+  }
+
