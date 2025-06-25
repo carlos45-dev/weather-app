@@ -268,7 +268,7 @@ h1 {
   .wind-speed,
   .direction{
     position: relative;
-    left: 15px;
+    left: 18px;
   }
   /*formating the search bar and the button*/
   .search-wrapper{
