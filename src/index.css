@@ -224,7 +224,7 @@ h1 {
     max-width: 95%; 
     position: relative;
     right: 4.3%;
-    top: 140px;
+    top: 145px;
     margin-top: -100px;
   }
 
@@ -274,7 +274,7 @@ h1 {
   .wind-speed,
   .direction{
     position: relative;
-    margin-left: -20px;
+    margin-left: -23px;
   }
   /*formating the search bar and the button*/
   .search-wrapper{
