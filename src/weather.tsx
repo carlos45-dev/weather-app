@@ -25,6 +25,7 @@ interface WeatherData {
   };
 }
 
+// Main Weather component
 function Weather() {
     const [weather, setWeather] = useState<WeatherData | null>(null);
     const [city, setCity] = useState<string>("");
@@ -52,6 +53,7 @@ function Weather() {
         }
     };
 
+// Fetch weather data by latitude and longitude
     const fetchCityName = async (latitude: number, longitude: number) => {
         const apiKey = `257a5e2dac441e5d1662c41efc4a5a86`;
         const url = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${apiKey}`;
@@ -91,7 +93,9 @@ function Weather() {
             setError("Geolocation not supported. Please enter a city manually.");
         }
     }, []);
-
+  
+    // Handle input change and button click
+    // This function updates the city state when the user types in the input field
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCity(e.target.value);
     };
@@ -105,6 +109,8 @@ function Weather() {
             handleGetWeatherClick();
         }
     };
+
+  /*displaying the weather data */
 
     return (
         <>

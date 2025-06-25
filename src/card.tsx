@@ -14,6 +14,7 @@ interface CardProps {
     min: number;
 }
 
+//Function to display the weather card with various weather details
 function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
     return (
         <div className="main-container">
