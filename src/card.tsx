@@ -18,8 +18,12 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
     return (
         <div className="card">
             <div className="info-grid">
-                <div className="wind-spead">
-                    <span> <FontAwesomeIcon className="wind-icon" icon={faWind} style={{ color: "#87CEEB" }} /> <span className='text'>Wind speed</span> <span className='mf'>{wind}m/s</span></span>
+
+                <div className="wind-speed">
+                    <span>< FontAwesomeIcon className='wind-icon' icon={faWind} style={{ color: "#87CEEB" }} />
+                     <span className="text">Wind</span>
+                     </span>
+                    <span className='space'>{wind}m/s</span>
                 </div>
 
                 <div className="temperature">
@@ -34,14 +38,7 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
 
                 <div className="humidity">
                     <span className="humidity-icon">💧</span>
-                    <span> <span className='text'>Humidity</span> <span className='space'>{humidity}%</span></span>
-                </div>
-
-                <div className="direction">
-                    <span>< FontAwesomeIcon className='wind-direction-icon' icon={faCompass} style={{ color: "#87CEEB" }} />
-                     <span className="text"> Wind direction</span>
-                     </span>
-                    <span>{getWindDirection(deg)}°</span>
+                    <span> <span className='text'>Humidity</span> <div className='space'>{humidity}%</div></span>
                 </div>
 
                 <div className="max">
@@ -52,6 +49,14 @@ function Card({ wind, temp, feel, humidity, pressure,deg,max,min }: CardProps) {
                 <div className="min">
                     <span><FontAwesomeIcon icon={faTemperatureHalf} style={{ color: "#e13748" }} /> Min </span>
                     <span>{Math.round(min)}℃</span>
+                </div>
+
+                
+                <div className="direction">
+                    <span>< FontAwesomeIcon className='wind-direction-icon' icon={faCompass} style={{ color: "#87CEEB" }} />
+                     <span className="text">Direction</span>
+                     </span>
+                    <span className='space'>{getWindDirection(deg)}°</span>
                 </div>
 
                 <div className='pressure'>

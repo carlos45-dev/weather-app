@@ -228,51 +228,38 @@ h1 {
     height:90px;
     padding-top: 20px;
   }
-  /*displaying the icons in a column*/
-  .pressure{
-    display: flex;
-    flex-direction:column ;
-    margin-top: -10px;
-  }
-  .direction{
-     display: flex;
-     flex-direction:column ;
-     margin-top: -10px;
-  }
-  .wind-spead{
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    margin-top: -10px;
-  }
+  .wind-speed,
+  .pressure,
+  .direction,
   .humidity{
     display: flex;
-    flex-direction:column ;
-    margin-top: -10px;
+    flex-direction: column;
+    border:solid;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100px;
   }
-  /*adjusting the position of the icons*/
-  .wind-spead,.wind-direction-icon{
-    margin-left:-60px ;
-  }
-  /*increasing the size of the icons*/
-  .wind-icon{
-    font-size: 40px;  
-    margin-left: 10px; 
-    padding-bottom: 3px; 
-  }
+  .wind-icon,
+  .pressure-icon,
+  .wind-direction-icon,  
   .humidity-icon{
-    font-size: 40px;
-    padding-bottom: 3px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
   }
-  .pressure-icon{
-    font-size: 40px;
-    padding-bottom: 3px;
+  .space{
+    display: flex;
+    justify-content: flex-end;
   }
-  .wind-direction-icon{
-    font-size: 40px;
-    padding-bottom: 3px; 
+  .text{
+    display: flex;
+    justify-content: end;
   }
-
+  .pressure,
+  .direction{
+    position: relative;
+    bottom: 60px;
+  }
   /*formating the search bar and the button*/
   .search-wrapper{
     display: flex;
@@ -294,11 +281,4 @@ h1 {
   .feels_like{
     display: none;
   }
-  .text{
-    display: none;
-  }
-  .mf{
-  display: block;
-  }
-
 }
