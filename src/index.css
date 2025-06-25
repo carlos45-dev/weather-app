@@ -255,17 +255,9 @@ h1 {
     margin-top: -10px;
   }
   /*adjusting the position of the icons*/
-  .wind-spead,
-  .wind-direction-icon{
-    margin-left:-45px ;
-  }
+  
 
   /*increasing the size of the icons*/
-  .wind-icon{
-    font-size: 40px;  
-    margin-left: 10px; 
-    padding-bottom: 3px; 
-  }
   .humidity-icon{
     font-size: 40px;
     padding-bottom: 3px;
@@ -274,11 +266,6 @@ h1 {
     font-size: 40px;
     padding-bottom: 3px;
   }
-  .wind-direction-icon{
-    font-size: 40px;
-    padding-bottom: 3px; 
-  }
-
   /*formating the search bar and the button*/
   .search-wrapper{
     display: flex;
@@ -302,12 +289,5 @@ h1 {
   }
   .text{
     display: none;
-  }
-  .mf{
-  display: block;
-  padding-left: 30px;
-  }
-  .space{
-    margin-left: 50px;
   }
 }
